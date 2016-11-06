@@ -1,0 +1,6 @@
+plugin:
+    name: 'travis.foobar::lang.plugin.name'
+    description: 'travis.foobar::lang.plugin.description'
+    author: 'Scott Travis'
+    icon: oc-icon-question
+    homepage: ''
