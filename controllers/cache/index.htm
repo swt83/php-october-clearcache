@@ -1,0 +1,18 @@
+<div data-control="toolbar">
+
+    <button
+        class="btn btn-default oc-icon-trash-o"
+        onclick="travis_janitor_cache(this);">
+        Clear the Cache
+    </button>
+    <span id="response" style="padding-left:1em"></span>
+
+    <script>
+        function travis_janitor_cache( btn )
+        {
+            jQuery(btn).prop('disabled', true).addClass('disabled');
+            jQuery('#response').html('').load("<?= Backend::url("travis/janitor/cache/clear"); ?>");
+            jQuery(btn).prop('disabled', false).removeClass('disabled');
+        }
+    </script>
+</div>

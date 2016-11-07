@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'Plugin',
-        'description' => 'An OctoberCMS plugin for doing something useful.',
-    ],
+        'name' => 'Janitor',
+        'description' => 'An OctoberCMS plugin for adding a "clear cache" button to the backend.',
+    ]
 ];

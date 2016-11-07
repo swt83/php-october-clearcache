@@ -1,4 +1,4 @@
-<?php namespace Travis\Foobar;
+<?php namespace Travis\Janitor;
 
 use System\Classes\PluginBase;
 

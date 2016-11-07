@@ -1,6 +1,26 @@
 plugin:
-    name: 'travis.foobar::lang.plugin.name'
-    description: 'travis.foobar::lang.plugin.description'
+    name: 'travis.janitor::lang.plugin.name'
+    description: 'travis.janitor::lang.plugin.description'
     author: 'Scott Travis'
-    icon: oc-icon-question
-    homepage: ''
+    icon: icon-trash
+    homepage: 'https://github.com/swt83/php-october-janitor'
+permissions:
+    travis.janitor.manage_cache:
+        tab: 'travis.janitor::lang.plugin.name'
+        label: 'Manage Cache'
+navigation:
+    janitor:
+        label: 'travis.janitor::lang.plugin.name'
+        url: travis/janitor/cache
+        icon: icon-trash
+        iconSvg: 'plugins/travis/janitor/assets/img/icon.png'
+        order: 900
+        permissions:
+            - travis.janitor.manage_cache
+        sideMenu:
+            cache:
+                label: Cache
+                url: travis/janitor/cache
+                icon: icon-exclamation-triangle
+                permissions:
+                    - travis.janitor.manage_cache
