@@ -2,6 +2,8 @@
 
 An OctoberCMS plugin for adding a "clear cache" button to the backend.
 
+With help from [FlynsArmy](https://github.com/Flynsarmy/oc-dashboardcachewidget-plugin).
+
 ## Install
 
 Add as a submodule to your project:
